@@ -10,7 +10,7 @@ body {
 a {
   cursor: pointer;
 }
-.writer{
+.writer {
   color: #707070;
 }
 #ad1 {
@@ -217,7 +217,7 @@ a {
 }
 .news-container2 {
   position: relative;
-  height: 512px;
+  min-height: 512px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -353,6 +353,14 @@ a {
   font-weight: bold;
   color: white;
 }
+.text-to-left {
+  width: fit-content;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
 .news3-slot1 .text-area {
   height: 99px;
   width: 100%;
@@ -384,41 +392,76 @@ a {
   color: white;
   height: 603px;
 }
-.news4-header {
-  width: 100%;
-  height: 30px;
-  background-color: #1417ac;
- margin-bottom: 15px;
-}
-.news4 .news4-header span {
-  background-color: #1417ac;
-  width: 610px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-}
 .news4-content {
   height: 588px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: black;
 }
-.weather .city-temp{
+.news4-content-right {
+  width: 190px;
+}
+.news4-content-left {
+  width: calc(100% - 190px);
+}
+.news4-header {
+  width: 100%;
+  height: 30px;
+  
+  margin-bottom: 15px;
+}
+.news4 .news4-header div {
+  background-color: #1417ac;
+  width: 610px;
+  height: 30px;
+  align-items: center;
+}
+.news4-header-span{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1417ac;
+  width: 610px;
+  height: 30px;
+  align-items: center;
+}
+.weather .city-temp {
   width: fit-content;
 }
-.weather .city-temp-name{
+.weather .city-temp-name {
   margin-right: 30px;
 }
-.weather .city-temp-deg{
+.weather .city-temp-deg {
   font-size: 36px;
   font-weight: 500;
 }
-.weather .city-temp-logo img{
+.weather .city-temp-logo img {
   width: 30px;
   height: 30px;
 }
-.weather-link{
+.weather-link {
   color: blue;
-  
+}
+.weather .writer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-area{
+  max-width: 420px;
+}
+.news4-content-left .text-area {
+  position: relative;
+  padding-right: 10px;
+  height: 73px;
+  color: black;
+}
+.news4-content-left .text-area .slot-title {
+  font-size: 16px;
+  font-weight: bold;
+}
 
+.news4-content-left .text-area .writer {
+  position: absolute;
+  bottom: 10px;
 }
