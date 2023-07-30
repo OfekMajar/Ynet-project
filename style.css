@@ -1,5 +1,5 @@
 * {
-  font-family: arial;
+  font-family: "Narkiss Block Regular";
 }
 body {
   direction: rtl;
@@ -116,35 +116,73 @@ a {
   width: 100%;
   position: relative;
 }
-.header-nav {
-  height: 100%;
+.header-nav1 {
+  height: 28px;
+  width: 1240px;
+  position: absolute;
+  background-color: rgb(222, 26, 26);
+  display: flex;
+  align-content: center;
+ 
+ 
+  z-index: 100000;
+}
+
+.ynet-logo-in-nav{
+  
+  background-image: url(.//ynet-nav-logo.png);
+      background-repeat: no-repeat;
+    background-size: 27px 27px;
+    width: 27px;
+    height: 27px;
+    background-position: center;
+}
+.header-nav2 {
+  height: 28px;
   width: 100%;
   background-color: rgb(222, 26, 26);
   display: flex;
   align-content: center;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
-.header-nav ul {
+.header-nav1 ul {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
 }
-.header-nav ul li {
+.header-nav2 ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-nav1 ul li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   color: white;
 }
-.header-nav ul li div {
+.header-nav2 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+.header-nav1 ul li div {
+  cursor: pointer;
+}
+.header-nav2 ul li div {
   cursor: pointer;
 }
 .search-bar img {
   height: 27px;
   width: 28px;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .handicap-icon {
